@@ -21,7 +21,7 @@ class handler(BaseHTTPRequestHandler):
       capitals = data[0]["capital"]
       country_name = data[0]["name"]["common"]
       print(capitals)
-      message = f"the capital of {country_name} is {capitals[0]}"
+      message = f"The capital of {country_name} is {capitals[0]}"
 
     elif country:
       response = requests.get(url + "name/" + country)
